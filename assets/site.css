@@ -10,6 +10,14 @@
 
 @font-face {
   font-family: "Aspekta";
+  src: url("./fonts/Aspekta-500.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Aspekta";
   src: url("./fonts/Aspekta-700.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
@@ -423,11 +431,9 @@ h5 {
 
 .projects-overlay__panel {
   color: var(--color-text);
-  width: min(1200px, 92vw);
-  margin: 10vh auto 0;
   border-radius: 10px;
-  padding: 1.5rem;
-  max-height: calc(100vh - 20vh);
+  padding: 60px;
+  max-height: calc(100vh);
   overflow: auto;
   overscroll-behavior: contain;
 }
@@ -499,7 +505,7 @@ h5 {
     sans-serif;
   font-size: 16px;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .projects-overlay__panel .title {
@@ -519,7 +525,7 @@ h5 {
     sans-serif;
   font-size: 30px;
   font-weight: 400;
-  line-height: 1.1;
+  line-height: 0.4;
 }
 
 .projects-grid {
