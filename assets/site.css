@@ -636,7 +636,8 @@ h5 {
 
 .project-intro__text {
   grid-column: 1 / 8;
-  filter: var(--rough-filter);
+  align-self: end;
+  /* filter: var(--rough-filter); */
 }
 
 .project-category {
