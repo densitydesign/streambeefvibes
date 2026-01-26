@@ -18,6 +18,22 @@
 
 @font-face {
   font-family: "Aspekta";
+  src: url("./fonts/Aspekta-550.otf") format("opentype");
+  font-weight: 550;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Aspekta";
+  src: url("./fonts/Aspekta-650.otf") format("opentype");
+  font-weight: 650;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Aspekta";
   src: url("./fonts/Aspekta-700.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
@@ -620,6 +636,7 @@ h5 {
 
 .project-intro__text {
   grid-column: 1 / 8;
+  filter: var(--rough-filter);
 }
 
 .project-category {
@@ -637,8 +654,10 @@ h5 {
     "Droid Sans",
     "Helvetica Neue",
     sans-serif;
-  font-size: 0.8rem;
-  font-weight: 600;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  color: #000;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
@@ -659,8 +678,10 @@ h5 {
     "Droid Sans",
     "Helvetica Neue",
     sans-serif;
-  font-size: 2.5rem;
+  font-weight: 400;
+  font-size: 58pt;
   line-height: 1.1;
+  color: #000;
   margin: 0 0 0.5rem;
 }
 
@@ -671,13 +692,15 @@ h5 {
 
 .project-placeholder {
   width: 100%;
-  background: #d6c1c1;
   border-radius: 6px;
+  display: block;
+  height: auto;
 }
 
 .project-placeholder--hero {
   grid-column: 8 / 12;
   aspect-ratio: 1 / 1;
+  object-fit: cover;
 }
 
 .project-gallery {
@@ -691,6 +714,7 @@ h5 {
 .project-grid--gallery > .project-placeholder--square {
   grid-column: span 3;
   aspect-ratio: 1 / 1;
+  object-fit: cover;
 }
 
 .project-authors {
@@ -742,8 +766,9 @@ h5 {
     "Helvetica Neue",
     sans-serif;
   font-weight: 550;
-  font-size: 40px;
+  font-size: 40pt;
   line-height: 1.1;
+  color: #000;
   margin: 0;
 }
 
@@ -764,14 +789,15 @@ h5 {
     "Helvetica Neue",
     sans-serif;
   font-weight: 650;
-  font-size: 24px;
+  font-size: 24pt;
   color: #f69bd5;
 }
 
 .project-section__text {
   grid-column: 3 / 11;
   font-family: "Apfel Grotezk", "Helvetica Neue", Arial, sans-serif;
-  font-size: 24px;
+  font-size: 24pt;
+  font-weight: 400;
   color: #000;
 }
 
@@ -785,6 +811,7 @@ h5 {
 
 .project-placeholder--wide {
   aspect-ratio: 16 / 9;
+  object-fit: cover;
 }
 
 .project-caption {
