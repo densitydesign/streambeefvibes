@@ -680,7 +680,7 @@ h5 {
     "Helvetica Neue",
     sans-serif;
   font-weight: 400;
-  font-size: 58pt;
+  font-size: 58px;
   line-height: 1.1;
   color: #000;
   margin: 0 0 0.5rem;
@@ -767,7 +767,7 @@ h5 {
     "Helvetica Neue",
     sans-serif;
   font-weight: 550;
-  font-size: 40pt;
+  font-size: 40px;
   line-height: 1.1;
   color: #000;
   margin: 0;
@@ -789,15 +789,15 @@ h5 {
     "Droid Sans",
     "Helvetica Neue",
     sans-serif;
-  font-weight: 650;
-  font-size: 24pt;
+  font-weight: 500;
+  font-size: 24px;
   color: #f69bd5;
 }
 
 .project-section__text {
   grid-column: 3 / 11;
   font-family: "Apfel Grotezk", "Helvetica Neue", Arial, sans-serif;
-  font-size: 24pt;
+  font-size: 24px;
   font-weight: 400;
   color: #000;
 }
