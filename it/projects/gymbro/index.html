@@ -141,30 +141,138 @@
 
       <section class="project-section">
         <div class="project-grid">
-          <h2 class="project-section__title">Section title</h2>
-          <div class="project-section__label">Descrizione del progetto</div>
+          <div class="project-section__label">Introduzione</div>
           <div class="project-section__text">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-  laboris nisi ut aliquip ex ea commodo consequat.
+              Il catalogo raccoglie 54 video di gymbro su TikTok in cui vengono
+              discussi temi politici in un contesto di allenamento, rivelando
+              come utenti dei due opposti schieramenti politici sfruttano la
+              grammatica della forza per sostenere le proprie argomentazioni
+              politiche. Per farlo, i video sono stati scomposti in contenuti
+              testuali e visivi, creando un catalogo con due sezioni separate
+              che possono essere sfogliate separatamente. Questa struttura
+              evidenzia quindi la discrepanza tra i contenuti testuali politici
+              e le immagini relative alla palestra.
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-  laboris nisi ut aliquip ex ea commodo consequat.
+              I testi che esprimono forza sono stati estrapolati da
+              trascrizioni audio, didascalie o testi in sovrimpressione nei
+              video. In seguito, sono state evidenziate le espressioni che
+              comunicano forza attraverso il vanto (bragging) o l’offesa
+              (offense) usando colori diversi.
+            </p>
+            <p>
+              Lo stesso metodo è stato applicato ai contenuti visivi, dove gli
+              elementi ricorrenti identificati sono il flexare (mettere in
+              mostra i propri muscoli), l’allenarsi, le espressioni facciali e
+              l’essere a torso nudo.
             </p>
           </div>
-          <div class="project-section__media">
-            <img
-              class="project-placeholder project-placeholder--wide"
-              src="./assets/table%20complete.jpg"
-              alt="Tabella completa del progetto"
-            />
-            <p class="project-caption">
-              Didascalia immagine per eventuali descrizioni necessarie.
+          <h2 class="project-section__title">Design dell’artefatto</h2>
+          <div class="project-section__text">
+            <p>
+              Il progetto esplora la tendenza dei gymbro a feticizzare la
+              forza, mostrando come pervada il dibattito politico
+              indipendentemente dall’ideologia degli utenti. Mostrare il
+              proprio corpo e sollevare pesi diventa la strategia comunicativa
+              dei gymbro per discutere questioni politiche.
+            </p>
+          </div>
+          <div class="project-section__label">Raccolta dati e campionamento</div>
+          <div class="project-section__text">
+            <p>
+              La ricerca si è focalizzata su TikTok, piattaforma principale in
+              cui il fenomeno gymbro è emerso diventando un trend. Per costruire
+              il dataset è stato utilizzato Apify, raccogliendo un totale di 438
+              video, contenenti almeno un hashtag relativo alla politica e uno
+              relativo al mondo della palestra.
+            </p>
+            <p>
+              I video sono stati organizzati in ordine decrescente in base al
+              numero di like e classificati manualmente in base alla loro
+              esplicita inclinazione politica, in linea con riferimenti politici
+              espliciti nelle immagini e nel testo (per esempio indossare un
+              cappellino MAGA; “essere un liberale e [...]”).
+            </p>
+            <p>
+              Sono stati poi selezionati i 28 video più popolari di ciascuna
+              fazione politica, con la successiva esclusione di soli due video
+              di utenti minorenni. Il campione finale di 54 video ha costituito
+              la base per lo sviluppo del catalogo Pumping Politics: How Gymbros
+              Use Strength in Political Discourse.
+            </p>
+          </div>
+          <div class="project-section__label">Manipolazione dei dati</div>
+          <div class="project-section__text">
+            <p>
+              Nei video, spesso c'è una totale discrepanza tra ciò che viene
+              detto e ciò che viene mostrato: mentre, da una parte, il testo
+              contiene solitamente dichiarazioni politiche di grande impatto,
+              dall’altra, le immagini si concentrano sulla forza fisica e sui
+              muscoli.
+            </p>
+            <p>
+              Per la rielaborazione dei dati, ogni video è stato scomposto in un
+              livello testuale e uno visivo, e organizzato nel catalogo con i
+              testi a sinistra e le immagini a destra, in modo da poter sfogliare
+              indipendentemente le due sezioni.
+            </p>
+            <p>
+              L'artefatto non solo sottolinea la discrepanza e l’indipendenza
+              emersa tra testo e immagini, ma evidenzia anche le manifestazioni
+              di forza ricorrenti al loro interno. Nei testi, viene espressa
+              attraverso il vanto o l'offesa. Per vanto si intendono le parole
+              impiegate per autocelebrarsi, spesso mettendo in evidenza i
+              risultati ottenuti in palestra. L’offesa, invece, comprende
+              termini utilizzati per sminuire gli altri, sia tramite insulti
+              diretti sia attraverso la derisione.
+            </p>
+            <p>
+              Nel catalogo, sono evidenziate in giallo le parole che esprimono
+              vanto, in verde quelle relative all’offesa. Queste categorie sono
+              state impiegate per organizzare i testi nel catalogo secondo un
+              ordine decrescente di intensità: dapprima i testi classificati
+              come offensivi, in quanto l’attacco diretto ad altri individui è
+              stato considerato una manifestazione di forza più pesante rispetto
+              alle altre, poi quelli contrassegnati come “vanto” (bragging) e
+              infine quelli senza evidenziazioni che esprimono forza.
+            </p>
+            <p>
+              Nei contenuti visivi, gli elementi ricorrenti che esprimono forza
+              fisica sono messi in risalto tramite riquadri e categorizzati in:
+              espressione facciale, flexare, allenamento e torso nudo. Nel
+              catalogo i contenuti visivi sono stati, invece, ordinati in base
+              al numero decrescente di elementi evidenziati.
+            </p>
+            <p>
+              Dati aggiuntivi come visualizzazioni, likes e un numero
+              identificativo del video sono stati inseriti nella parte superiore
+              di ogni pagina del catalogo, così da permettere all’utente sia di
+              abbinare i testi e le immagini originali, sia di contestualizzare
+              i contenuti in base alle loro statistiche.
+            </p>
+            <p>
+              Inoltre, grazie a una fascia colorata nella parte inferiore di
+              ogni pagina (rossa per i contenuti di sinistra e blu per quelli di
+              destra), è possibile riconoscere la classificazione politica
+              assegnata a ciascun video.
+            </p>
+            <p>
+              Ispirandosi all’attenzione posta dai TikTok sul corpo e l’aspetto
+              fisico, il progetto adotta il linguaggio visivo dei magazine sulla
+              palestra, utilizzando una tipografia grossa e un’illustrazione con
+              luci drammatiche per enfatizzare la muscolatura. Le scelte di
+              linguaggio visivo sono evidenti sia sulla copertina del catalogo
+              sia nel design del tavolo di allestimento.
+            </p>
+            <p>
+              Se la prima parte della mostra è progettata per la consultazione
+              del catalogo, la seconda è dedicata all’evaluation method. Lo
+              scopo è valutare se i visitatori hanno appreso l’obiettivo
+              comunicativo principale del progetto, chiedendogli di valutare la
+              forza espressa dagli elementi visivi e testuali dei TikTok, tramite
+              degli adesivi che posizionano su un grafico aiutandosi con le
+              evidenziazioni introdotte nel catalogo.
             </p>
           </div>
         </div>
