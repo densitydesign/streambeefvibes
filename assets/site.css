@@ -815,6 +815,12 @@ h5 {
   object-fit: cover;
 }
 
+.project-page--it .project-placeholder--wide {
+  aspect-ratio: auto;
+  height: auto;
+  object-fit: contain;
+}
+
 .project-caption {
   font-family: "Apfel Grotezk", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px;
