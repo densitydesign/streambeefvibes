@@ -143,80 +143,92 @@
           <div class="project-section__label">Introduzione</div>
           <div class="project-section__text">
             <p>
-              L’intento del progetto è rendere visibile e criticamente
-              interpretabile la tossicità della cultura del lavoro così come
-              emerge nei meme anti-work, evidenziando problemi strutturali,
-              comportamenti ricorrenti e sentimenti condivisi. Il progetto si
-              sviluppa in tre cataloghi che raccolgono i 167 meme analizzati e
-              li interpretano attraverso un processo di scomposizione: gli
-              elementi visivi e testuali riconducibili alle tre dimensioni
-              vengono isolati e messi in evidenza mediante un sistema di
-              finestre ritagliate nelle pagine di acetato, permettendo al
-              lettore di comprendere come nei meme siano presenti più livelli di
-              significato.
+              Il progetto Anatomia dei meme anti-work analizza i meme come
+              strumenti critici capaci di rendere visibile la tossicità della
+              cultura del lavoro contemporaneo. Attraverso la raccolta, la
+              classificazione e la scomposizione di meme diffusi online, il
+              progetto indaga problemi strutturali, comportamenti ricorrenti e
+              sentimenti condivisi dai lavoratori, mostrando come questi
+              contenuti apparentemente leggeri diventino potenti dispositivi di
+              denuncia culturale.
             </p>
             <p>
-              Il dataset è stato costruito dal profilo Instagram @antiworkmemes
-              (2020–2025). Dal corpus iniziale di 600 post sono stati
-              selezionati e ordinati 204 meme sulla base dell’engagement,
-              successivamente sono stati classificati secondo le tre dimensioni
-              individuate. Sono stati esclusi i post duplicati e quelli senza un
-              riferimento a problemi, comportamenti o sentimenti dei lavoratori,
-              ottenendo così un dataset composto da 167 meme.
+              Il progetto si sviluppa principalmente attraverso tre cataloghi
+              tematici che raccolgono e interpretano 167 meme, selezionati e
+              analizzati tramite un processo di scomposizione visiva e testuale.
+              Questo approccio consente di evidenziare i diversi livelli di
+              significato presenti in ciascun meme.
             </p>
           </div>
           <div class="project-section__media">
             <img
               class="project-placeholder project-placeholder--wide"
-              src="./assets/table%20complete.jpg"
-              alt="Tabella completa del progetto"
+              src="./assets/expo_complessiva.jpg"
+              alt="Vista complessiva dell’allestimento con la griglia dei 167 meme"
             />
             <p class="project-caption">
-              Didascalia immagine per eventuali descrizioni necessarie.
+              Vista complessiva dell’allestimento con la griglia dei 167 meme e
+              i tre cataloghi esposti sul tavolo.
             </p>
           </div>
+
           <h2 class="project-section__title">Design dei dati</h2>
           <div class="project-section__label">Raccolta dati</div>
           <div class="project-section__text">
             <p>
-              La raccolta iniziale dei dati, effettuata il 10 ottobre 2025
-              mediante l’utilizzo di Instagram Scraper di Apify, ha prodotto un
-              dataset di 600 post, corredati dai relativi metadati. I contenuti
-              sono stati ordinati sulla base del numero totale di interazioni
-              (calcolate come somma di like e commenti), dal valore più alto al
-              più basso. Per l’analisi iniziale sono stati selezionati i meme
-              che superano la soglia di 10.000 interazioni complessive, per un
-              totale di 204 post. Successivamente, a seguito dell’esclusione dei
-              contenuti duplicati e non pertinenti, il dataset è stato ridotto a
-              167 meme. Ogni riga del dataset rappresenta un singolo post, da #1
-              a #167; per ciascun meme, ai dati originali sono stati affiancati:
-              l’immagine, la trascrizione del testo e la sua traduzione in
-              italiano.
+              Il dataset è stato costruito a partire dal profilo Instagram
+              @antiworkmemes, considerando i contenuti pubblicati tra il 2020 e
+              il 2025. La raccolta iniziale dei dati, effettuata il 10 ottobre
+              2025 mediante l’utilizzo di Instagram Scraper di Apify, ha
+              prodotto un dataset di 600 post, corredati dai relativi metadati.
+              I contenuti sono stati ordinati sulla base del numero totale di
+              interazioni (calcolate come somma di like e commenti), dal valore
+              più alto al più basso. Per l’analisi iniziale sono stati
+              selezionati i meme che superano la soglia di 10.000 interazioni
+              complessive, per un totale di 204 post. Successivamente, a seguito
+              dell’esclusione dei contenuti duplicati e non pertinenti, il
+              dataset è stato ridotto a 167 meme. Ogni riga del dataset
+              rappresenta un singolo post, da #1 a #167; per ciascun meme, ai
+              dati già presenti sono stati ulteriormente affiancati: l’immagine,
+              la trascrizione del testo e la sua traduzione in italiano.
             </p>
+          </div>
+          <div class="project-section__label">Manipolazione dati</div>
+          <div class="project-section__text">
             <p>
-              I meme sono stati quindi analizzati scomponendone porzioni
-              testuali e visive, operazione che ha permesso di individuare tre
-              dimensioni interpretative capaci di descrivere la cultura tossica
-              del lavoro: i problemi legati a condizioni e dinamiche lavorative,
-              i comportamenti messi in atto dai lavoratori e i sentimenti
-              espressi rispetto alla propria esperienza professionale. Per
-              ciascuna dimensione sono state definite le seguenti colonne:
+              I meme sono stati analizzati scomponendone porzioni testuali e
+              visive, operazione che ha permesso di individuare tre dimensioni
+              interpretative capaci di descrivere la cultura tossica del lavoro:
+              i problemi legati a condizioni e dinamiche lavorative, i
+              comportamenti messi in atto dai lavoratori e i sentimenti espressi
+              rispetto alla propria esperienza professionale. Per ciascuna
+              dimensione sono state definite le seguenti colonne all’interno del
+              dataset:
             </p>
             <ul>
-              <li>
-                Presenza o assenza della dimensione interpretativa nel meme;
-              </li>
+              <li>Presenza o assenza della dimensione interpretativa nel meme.</li>
               <li>
                 Porzione testuale e/o visiva rappresentativa del problema, del
-                comportamento o del sentimento;
+                comportamento o del sentimento.
               </li>
               <li>
-                Categoria tematica della dimensione: i meme sono raggruppati in
-                14 categorie di problemi, 6 di comportamenti e 11 di sentimenti.
+                Affinità tematica della dimensione: i meme sono raggruppati in
+                14 categorie di problemi, 6 di comportamenti e 11 di
+                sentimenti.
               </li>
             </ul>
           </div>
-          <div class="project-section__label">Categorie di problemi</div>
+          <div class="project-section__media">
+            <img
+              class="project-placeholder project-placeholder--wide"
+              src="./assets/dataset.jpg"
+              alt="Dataset del progetto"
+            />
+            <p class="project-caption">Dataset del progetto.</p>
+          </div>
+
+          <h2 class="project-section__title">Dimensioni interpretative</h2>
+          <div class="project-section__label">Problemi</div>
           <div class="project-section__text">
             <p>
               Le categorie legate ai problemi descrivono le principali criticità
@@ -225,27 +237,17 @@
               incoerenze dell’organizzazione del lavoro, mettendo in evidenza
               ciò che rende l’esperienza lavorativa tossica o insostenibile. Nel
               loro insieme restituiscono una mappa delle tensioni ricorrenti che
-              attraversano il lavoro contemporaneo. Le categorie, con i relativi
-              esempi, sono le seguenti:
+              attraversano il lavoro contemporaneo.
             </p>
-            <ul>
-              <li>Turni troppo lunghi</li>
-              <li>Cattiva gestione</li>
-              <li>Riunioni</li>
-              <li>Assunzione</li>
-              <li>Capitalismo</li>
-              <li>Relazioni interpersonali</li>
-              <li>Miliardari</li>
-              <li>Pretese del lavoro</li>
-              <li>Ambiente poco sano</li>
-              <li>Lavoro senza scopo</li>
-              <li>Sistema lavorativo</li>
-              <li>Lavoro sottopagato</li>
-              <li>Piani per la pensione</li>
-              <li>Permessi e ferie</li>
-            </ul>
+            <p>
+              Le categorie individuate sono: Turni troppo lunghi, Cattiva
+              gestione, Riunioni, Assunzione, Capitalismo, Relazioni
+              interpersonali, Miliardari, Pretese del lavoro, Ambiente poco
+              sano, Lavoro senza scopo, Sistema lavorativo, Lavoro sottopagato,
+              Piani per la pensione, Permessi e ferie.
+            </p>
           </div>
-          <div class="project-section__label">Categorie di comportamento</div>
+          <div class="project-section__label">Comportamenti</div>
           <div class="project-section__text">
             <p>
               Le categorie dei comportamenti rappresentano i modi in cui i
@@ -254,19 +256,15 @@
               collettive, atteggiamenti di distacco, ironia, rassegnazione o
               opposizione, che mostrano come le persone affrontano
               quotidianamente la tossicità del lavoro e cercano di riconfigurare
-              il proprio ruolo al suo interno. Le categorie, con i relativi
-              esempi, sono le seguenti:
+              il proprio ruolo al suo interno.
             </p>
-            <ul>
-              <li>Modalità fuga</li>
-              <li>Rivelazioni sul lavoro</li>
-              <li>Missione: sopravvivere</li>
-              <li>L’arte di non farsi sfruttare</li>
-              <li>La violenza è la soluzione</li>
-              <li>Immagina, puoi</li>
-            </ul>
+            <p>
+              Le categorie di comportamenti includono: Modalità fuga,
+              Rivelazioni sul lavoro, Missione: sopravvivere, L’arte di non
+              farsi sfruttare, La violenza è la soluzione, Immagina, puoi.
+            </p>
           </div>
-          <div class="project-section__label">Categorie di sentimenti</div>
+          <div class="project-section__label">Sentimenti</div>
           <div class="project-section__text">
             <p>
               Le categorie dei sentimenti rappresentano le reazioni emotive
@@ -276,141 +274,186 @@
               sentimenti: momenti, dinamiche, aspettative o condizioni del
               lavoro. Ne emerge un panorama emotivo complesso, che evidenzia il
               rapporto affettivo e spesso conflittuale tra individui e cultura
-              del lavoro. Le categorie, con i relativi esempi, sono le seguenti:
+              del lavoro.
             </p>
-            <ul>
-              <li>Le persone sono il problema</li>
-              <li>Il denaro è tutto</li>
-              <li>Fanculo il capitalismo</li>
-              <li>Missione: non lavorare</li>
-              <li>Il circo dell’assunzione</li>
-              <li>Abbassa le aspettative</li>
-              <li>Odio il mio lavoro</li>
-              <li>Non mi interessa il lavoro</li>
-              <li>Trappola del tempo</li>
-              <li>Esaurimento totale</li>
-              <li>Pessima gestione</li>
-            </ul>
+            <p>
+              Le categorie individuate sono: Le persone sono il problema, Il
+              denaro è tutto, Fanculo il capitalismo, Missione: non lavorare, Il
+              circo dell’assunzione, Abbassa le aspettative, Odio il mio lavoro,
+              Non mi interessa il lavoro, Trappola del tempo, Esaurimento
+              totale, Pessima gestione.
+            </p>
           </div>
-          <h2 class="project-section__title">Design dell’artefatto</h2>
-          <!-- <div class="project-section__media">
-            <img
-              class="project-placeholder project-placeholder--wide"
-              src="./assets/antiwork-big.png"
-              alt="Introduzione agli artefatti espositivi"
-            />
-            <p class="project-caption">
-              Introduzione agli artefatti espositivi
+
+          <h2 class="project-section__title">Esperienza</h2>
+          <div class="project-section__label">Artefatti espositivi</div>
+          <div class="project-section__text">
+            <p>
+              Durante la mostra, i tre cataloghi sono esposti sul tavolo insieme
+              alla griglia che presenta i 167 meme ordinati per livello di
+              engagement. Ogni meme è contrassegnato da marcatori cromatici che
+              indicano le dimensioni presenti: problemi (rosso), comportamenti
+              (viola) e sentimenti (verde). I marcatori segnalano inoltre la
+              presenza di ciascun meme all’interno dei rispettivi cataloghi.
             </p>
           </div>
           <div class="project-section__media">
             <img
               class="project-placeholder project-placeholder--wide"
-              src="./assets/antiwork-big.png"
-              alt="Interazione dell’utente con la griglia"
+              src="./assets/introduzione-tavolo.jpg"
+              alt="Introduzione dell’esposizione"
+            />
+            <p class="project-caption">Introduzione dell’esposizione.</p>
+          </div>
+          <div class="project-section__media">
+            <img
+              class="project-placeholder project-placeholder--wide"
+              src="./assets/griglia_cataloghi.jpg"
+              alt="Dettaglio dell’esposizione con la griglia e il catalogo"
             />
             <p class="project-caption">
-              Interazione dell’utente con la griglia
+              Dettaglio dell’esposizione: la griglia affiancata da uno dei tre
+              cataloghi.
             </p>
-          </div> -->
+          </div>
+          <div class="project-section__media">
+            <img
+              class="project-placeholder project-placeholder--wide"
+              src="./assets/griglia_dettaglio.jpg"
+              alt="Dettaglio ravvicinato della griglia espositiva"
+            />
+            <p class="project-caption">
+              Dettaglio ravvicinato della griglia espositiva che mostra
+              l’ordinamento dei meme in base all’engagement e i marcatori
+              cromatici delle tre dimensioni interpretative.
+            </p>
+          </div>
+          <div class="project-section__media">
+            <img
+              class="project-placeholder project-placeholder--wide"
+              src="./assets/confronto-meme.jpg"
+              alt="Confronto tra griglia e cataloghi"
+            />
+            <p class="project-caption">
+              I meme sulla griglia vengono ritrovati all’interno dei cataloghi,
+              grazie ai marcatori cromatici e all’indice numerico.
+            </p>
+          </div>
+
+          <div class="project-section__label">Struttura dei cataloghi</div>
+          <div class="project-section__media">
+            <img
+              class="project-placeholder project-placeholder--wide"
+              src="./assets/tre_cataloghi.jpg"
+              alt="I tre cataloghi del progetto"
+            />
+            <p class="project-caption">
+              I tre cataloghi del progetto, ciascuno dedicato a una specifica
+              dimensione interpretativa.
+            </p>
+          </div>
           <div class="project-section__text">
-            <p>
-              Durante la mostra, i tre cataloghi sono esposti su un tavolo e
-              affiancati da una griglia espositiva dei 167 meme, disposti in
-              ordine di engagement come descritto precedentemente. All’interno
-              della raccolta, ciascun meme è contrassegnato da marcatori
-              cromatici che indicano le dimensioni in esso rappresentate:
-              problemi (rosso), comportamenti (viola) e sentimenti (verde). I
-              marcatori segnalano inoltre la presenza di ciascun meme
-              all’interno dei rispettivi cataloghi.
-            </p>
-            <p>Griglia e uno dei cataloghi. Dettaglio della griglia.</p>
             <p>
               Ogni catalogo, che funge da approfondimento della dimensione a cui
               è dedicato, è introdotto da una mappa che mostra tutte le
               categorie presenti. Per ciascuna di queste vengono riportati i
               ritagli dei meme che ne rappresentano i problemi, i comportamenti
-              o i sentimenti, offrendo così una visione d’insieme completa. Ogni
-              capitolo del catalogo corrisponde a un raggruppamento e contiene
-              tutti i meme appartenenti alla categoria, ordinati secondo il
-              livello di engagement. Le pagine interne ai capitoli sono
-              intervallate da fogli in acetato colorato, che evidenziano le
-              porzioni interessate dei meme e le isolano, facilitandone
-              l’osservazione.
-            </p>
-          </div>
-          <!-- <div class="project-section__media">
-            <img
-              class="project-placeholder project-placeholder--wide"
-              src="./assets/antiwork-big.png"
-              alt="I tre cataloghi"
-            />
-            <p class="project-caption">I tre cataloghi</p>
-          </div>
-          <div class="project-section__media">
-            <img
-              class="project-placeholder project-placeholder--wide"
-              src="./assets/antiwork-big.png"
-              alt="Mappa all’interno del catalogo dei problemi"
-            />
-            <p class="project-caption">
-              Mappa all’interno del catalogo dei problemi
-            </p>
-          </div> -->
-          <!-- <div class="project-section__media">
-            <img
-              class="project-placeholder project-placeholder--wide"
-              src="./assets/antiwork-big.png"
-              alt="Dettaglio di una pagina interna del catalogo, con il meme e i relativi dati"
-            />
-            <p class="project-caption">
-              Dettaglio di una pagina interna del catalogo, con il meme e i
-              relativi dati
+              o i sentimenti, offrendo così una visione d’insieme completa.
             </p>
           </div>
           <div class="project-section__media">
             <img
               class="project-placeholder project-placeholder--wide"
-              src="./assets/antiwork-big.png"
-              alt="Dettaglio del ritaglio di una pagina all’interno del catalogo di problemi della cultura tossica"
+              src="./assets/mappa_catalogo_problemi.jpg"
+              alt="Mappa introduttiva del catalogo dei problemi"
             />
             <p class="project-caption">
-              Dettaglio del ritaglio di una pagina all’interno del catalogo di
-              problemi della cultura tossica
+              Mappa introduttiva del catalogo dei problemi, con la
+              visualizzazione di tutte le categorie tematiche e dei relativi
+              ritagli dei meme.
             </p>
-          </div> -->
+          </div>
           <div class="project-section__text">
             <p>
-              Nella fase conclusiva, il visitatore è invitato a identificare
-              autonomamente le categorie di problemi, comportamenti e sentimenti
-              presenti nei meme. A questo scopo viene fornito un questionario,
-              con una domanda per ciascuna dimensione interpretativa: l’utente
-              appone un timbro sul meme che ritiene rappresenti meglio la
-              categoria indicata. Maggiore è la capacità dei visitatori di
-              riconoscere correttamente le categorie, maggiore è l’efficacia
-              complessiva degli artefatti espositivi.
+              Ogni capitolo del catalogo corrisponde a un raggruppamento e
+              contiene tutti i meme appartenenti alla categoria, ordinati
+              secondo il livello di engagement. Le pagine interne ai capitoli
+              sono intervallate da fogli in acetato colorato, che isolano le
+              porzioni interessate dei meme, facilitandone l’osservazione e la
+              lettura analitica.
             </p>
           </div>
-          <!-- <div class="project-section__media">
+          <div class="project-section__media">
             <img
               class="project-placeholder project-placeholder--wide"
-              src="./assets/antiwork-big.png"
+              src="./assets/pagina_catalogo_acetato.jpg"
+              alt="Pagina interna del catalogo con foglio in acetato"
+            />
+            <p class="project-caption">
+              Dettaglio di una pagina interna del catalogo con foglio in acetato
+              colorato che evidenzia le porzioni visive e testuali del meme.
+            </p>
+          </div>
+          <div class="project-section__text">
+            <p>
+              Le pagine bianche interne ai capitoli presentano i meme nella loro
+              interezza, accompagnati dai relativi metadati e dalla traduzione
+              italiana dei testi, in cui viene sottolineata la porzione di meme
+              corrispondente al ritaglio tramite acetato.
+            </p>
+          </div>
+          <div class="project-section__media">
+            <img
+              class="project-placeholder project-placeholder--wide"
+              src="./assets/sottolineatura.jpg"
+              alt="Dettaglio di una pagina interna del catalogo"
+            />
+            <p class="project-caption">
+              Dettaglio di una pagina interna del catalogo.
+            </p>
+          </div>
+
+          <div class="project-section__label">Interazione e valutazione</div>
+          <div class="project-section__text">
+            <p>
+              Nella fase conclusiva dell’esperienza, i visitatori sono invitati
+              a identificare autonomamente le categorie di problemi,
+              comportamenti e sentimenti presenti nei meme. Attraverso un
+              questionario, l’utente appone un timbro sul meme che ritiene
+              rappresentativo di una determinata categoria, indicata nella
+              domanda.
+            </p>
+          </div>
+          <div class="project-section__media">
+            <img
+              class="project-placeholder project-placeholder--wide"
+              src="./assets/fase_evaluation.jpg"
               alt="Interazione dell’utente con la fase di evaluation"
             />
             <p class="project-caption">
-              Interazione dell’utente con la fase di evaluation
+              Interazione dell’utente con la fase di evaluation tramite il
+              questionario e i timbri.
+            </p>
+          </div>
+          <div class="project-section__text">
+            <p>
+              L’efficacia degli artefatti espositivi viene valutata in base alla
+              capacità dei visitatori di riconoscere correttamente le categorie,
+              trasformando l’osservazione in un momento attivo di
+              interpretazione critica.
             </p>
           </div>
           <div class="project-section__media">
             <img
               class="project-placeholder project-placeholder--wide"
-              src="./assets/antiwork-big.png"
-              alt="User flow che illustra l’intera esperienza"
+              src="./assets/userflow.jpg"
+              alt="User flow dell’esperienza del visitatore"
             />
             <p class="project-caption">
-              User flow che illustra l’intera esperienza
+              User flow che illustra l’intera esperienza del visitatore con gli
+              artefatti espositivi progettati.
             </p>
-          </div> -->
+          </div>
         </div>
       </section>
     </main>
