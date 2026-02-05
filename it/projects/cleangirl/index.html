@@ -98,7 +98,9 @@
               alt="Not clean enough"
             />
             <p class="project-subtitle">
-              Un’indagine sui commenti ai video TikTok delle influencer Clean Girl, relativi all'impossibilità di raggiungere l’estetica promossa
+              Un’indagine sui commenti ai video TikTok delle influencer Clean
+              Girl, relativi all'impossibilità di raggiungere l’estetica
+              promossa
             </p>
           </div>
           <img
@@ -113,19 +115,24 @@
         <div class="project-grid project-grid--gallery">
           <img
             class="project-placeholder project-placeholder--square"
-            src="./assets/clean-girl.JPG"
+            src="./assets/mockup1.png"
             alt="Immagine del progetto"
           />
           <img
             class="project-placeholder project-placeholder--square"
-            src="./assets/clean-girl-1.jpg"
+            src="./assets/mockup2.png"
             alt="Immagine del progetto"
           />
-          <img
+          <video
             class="project-placeholder project-placeholder--square"
-            src="./assets/clean-girl-2.jpg"
-            alt="Immagine del progetto"
-          />
+            src="./assets/mockup3.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            aria-label="Video del progetto"
+          ></video>
           <div class="project-authors">
             <p class="project-authors__label">Autori</p>
             <p>Asano Kanna</p>
@@ -143,7 +150,7 @@
           <div class="project-section__label">Introduzione</div>
           <div class="project-section__text">
             <p>
-              Il progetto è un'installazione che analizza le problematiche
+              prova Il progetto è un'installazione che analizza le problematiche
               legate alla clean girl aesthetic espresse dagli utenti nei
               commenti ai video delle influencer; l'opera si compone di
               un'installazione fisica (una parete di commenti stampati) e di un
@@ -175,26 +182,84 @@
               Stati Uniti e nel Regno Unito. I commenti sono stati raccolti e
               classificati manualmente in cinque categorie (Aspetto, Ricchezza,
               Motivazione, Provenienza e Intersezioni) basate su tratti
-              ricorrenti. Nell'artefatto, i commenti sono organizzati per
-              categoria e contrassegnati da un "Elemento di Insicurezza"
+              ricorrenti. Nell’artefatto, i commenti sono organizzati per
+              categoria e contrassegnati da un “Elemento di Insicurezza”
               (Insecurity Element), dimostrando come l'ideale di bellezza
-              "pulita" — presentato come naturale e autentico — sia in realtà
+              “pulita”, presentato come naturale e autentico, sia in realtà
               esclusivo e legato a specifici standard estetici, economici e
               culturali, continuamente rinforzati dall'immaginario delle
               influencer.
             </p>
           </div>
+
           <div class="project-section__label">
             Links ai materiali visivi e audiovisivi dell’artefatto
           </div>
           <div class="project-section__text">
-            <p>Datasets</p>
-            <ul>
-              <li>G.03_Visualization_Dataset</li>
-              <li>G.03_Evaluation_Dataset</li>
-              <li>G.03_Video_Dataset</li>
-            </ul>
+            <p>Datasets usati per la categorizzazione dei dati.</p>
           </div>
+          <div class="project-section__media">
+            <img
+              class="project-placeholder project-placeholder--wide"
+              src="./assets/G03_1.png"
+              alt="Sezione Aspetto fisico del dataset"
+            />
+            <p class="project-caption">
+              La sezione “Aspetto fisico” del dataset della visualizzazione.
+            </p>
+          </div>
+          <div class="project-section__text">
+            <p>
+              <a
+                href="https://docs.google.com/spreadsheets/d/180LgBtwPb8n73WF-U5Hh86VJ2vL678RdlxIiGVJ0B1U/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Clicca qui per aprire il dataset della visualizzazione</a
+              >
+            </p>
+          </div>
+          <div class="project-section__media">
+            <img
+              class="project-placeholder project-placeholder--wide"
+              src="./assets/G03_2.png"
+              alt="Sezione Motivazione del dataset Evaluation"
+            />
+            <p class="project-caption">
+              La sezione “Motivazione” del dataset dell’Evaluation Methodology.
+            </p>
+          </div>
+          <div class="project-section__text">
+            <p>
+              <a
+                href="https://docs.google.com/spreadsheets/d/1_vT4vEQRvWqRFcwaB2gUeCOOmlbojNROXgUEiUkazAg/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Clicca qui per aprire il dataset dell’Evaluation Methodology</a
+              >
+            </p>
+          </div>
+          <div class="project-section__media">
+            <img
+              class="project-placeholder project-placeholder--wide"
+              src="./assets/G03_3.png"
+              alt="Sezione selezione video dataset introduttivo"
+            />
+            <p class="project-caption">
+              La sezione di selezione dei video del dataset utilizzato per il
+              video introduttivo.
+            </p>
+          </div>
+          <div class="project-section__text">
+            <p>
+              <a
+                href="https://docs.google.com/spreadsheets/d/1MenOWO8GzzODrhQJAV306aF4HdKqyZDpiY6j8nzlVJQ/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Clicca qui per aprire il dataset del video</a
+              >
+            </p>
+          </div>
+
           <h2 class="project-section__title">Design dell’artefatto</h2>
           <div class="project-section__label">Raccolta dati</div>
           <div class="project-section__text">
@@ -209,53 +274,48 @@
               commento in cinque categorie principali di Mancanza (Categories of
               Lack):
             </p>
-            <ul>
-              <li>
-                Aspetto fisico (Appearance): preoccupazioni relative all'aspetto
-                fisico. Ad esempio: "Vorrei che la mia pelle fosse così
-                perfetta"; "Se fossi come te, non mi lamenterei mai più del mio
-                corpo, sei così carina".
-              </li>
-              <li>
-                Status (Status): questioni relative al benessere economico. Ad
-                esempio: "Mi hai dato della povera in trentamila lingue"; "Mi
-                sentivo già povera con così tanti prodotti, poi quando ha tirato
-                fuori un sapone di Chanel ho avuto la certezza di essere
-                estremamente povera".
-              </li>
-              <li>
-                Motivazione (Motivation): problematiche comportamentali e
-                motivazionali. Ad esempio: "Le persone con la depressione spesso
-                fanno fatica a trovare la motivazione per lavarsi; non tutti
-                abbiamo gli stessi privilegi"; "Vorrei essere così, senza
-                sforzo".
-              </li>
-              <li>
-                Provenienza (Provenance): difficoltà legate all'etnia o al
-                contesto culturale di provenienza. Ad esempio: "Vorrei solamente
-                essere una ragazza bianca in Alabama"; "Vorrei essere bianc* per
-                essere una clean girl".
-              </li>
-              <li>
-                Intersezioni (Intersections): commenti che si riferiscono a più
-                di una sola categoria. Ad esempio: "Oh, essere bianc* e biond*";
-                "Se avessi tutti quei soldi da spendere, mi comprerei una pelle
-                nuova".
-              </li>
-            </ul>
+            <p>
+              Aspetto fisico (Appearance): preoccupazioni relative all'aspetto
+              fisico. Ad esempio: "Vorrei che la mia pelle fosse così perfetta";
+              "Se fossi come te, non mi lamenterei mai più del mio corpo, sei
+              così carina".
+            </p>
+            <p>
+              Status (Status): questioni relative al benessere economico. Ad
+              esempio: "Mi hai chiamat* pover* in trentamila lingue"; "Mi
+              sentivo già pover* con così tanti prodotti, poi quando ha lanciato
+              un sapone di Chanel ho avuto la certezza di essere estremamente
+              pover*".
+            </p>
+            <p>
+              Motivazione (Motivation): problematiche comportamentali e
+              motivazionali. Ad esempio: "Le persone con la depressione spesso
+              fanno fatica a trovare la motivazione per lavarsi; non tutti
+              abbiamo gli stessi privilegi"; "Vorrei essere così, senza sforzo".
+            </p>
+            <p>
+              Provenienza (Provenance): difficoltà legate all'etnia o al
+              contesto culturale di provenienza. Ad esempio: "Vorrei solamente
+              essere una ragazza bianca in Alabama"; "Vorrei essere bianc* per
+              essere una clean girl".
+            </p>
+            <p>
+              Intersezioni (Intersections): commenti che si riferiscono a più di
+              una sola categoria. Ad esempio: "Oh, essere bianc* e biond*"; "Se
+              avessi tutti quei soldi da spendere, mi comprerei una pelle
+              nuova".
+            </p>
             <p>
               Ogni commento è stato ulteriormente categorizzato tramite un
               Elemento di Insicurezza (es. corpo, soldi, ...), identificato a
               sua volta da un Tratto di Insicurezza (es. pelle, depressione,
               pigrizia, ...). Ad esempio, il commento: "Le mie occhiaie mi
-              rovinano tutto" è categorizzato in questo modo:
+              rovinano tutto" è categorizzato in questo modo: Categoria:
+              Aspetto; Elemento di Insicurezza: viso; Tratto di Insicurezza:
+              occhiaie.
             </p>
-            <ul>
-              <li>Categoria: Aspetto</li>
-              <li>Elemento di Insicurezza: viso</li>
-              <li>Tratto di Insicurezza: occhiaie</li>
-            </ul>
           </div>
+
           <div class="project-section__label">La parete dei commenti</div>
           <div class="project-section__text">
             <p>
@@ -273,26 +333,64 @@
               in corsivo e nel colore della rispettiva categoria.
             </p>
           </div>
+          <div class="project-section__media">
+            <img
+              class="project-placeholder project-placeholder--wide"
+              src="./assets/G03_4.jpg"
+              alt="Dettaglio colonne categoria Aspetto"
+            />
+            <p class="project-caption">
+              Primo piano di tre colonne della categoria Aspetto fisico, in
+              particolare degli Elementi di Insicurezza “viso” e “capelli”.
+            </p>
+          </div>
+          <div class="project-section__media">
+            <img
+              class="project-placeholder project-placeholder--wide"
+              src="./assets/G03_5.jpg"
+              alt="Vista prospettica parete commenti"
+            />
+            <p class="project-caption">
+              Vista in prospettiva dalle colonne affiancate della categoria
+              Aspetto fisico.
+            </p>
+          </div>
+
           <div class="project-section__label">Video</div>
           <div class="project-section__text">
             <p>
               Il video è stato sviluppato integrando tecnologie di IA
               generativa, partendo dall'analisi estetica delle dieci influencer
               di riferimento selezionate per la ricerca. Tra queste, Daisy
-              Herriot (@daisyherriot) è stata scelta come figura centrale in
-              quanto una delle influencer con il maggior seguito e quella che
-              più fedelmente incarna l'estetica clean girl; il suo volto è stato
-              quindi utilizzato come base per sintetizzare l'immagine ideale
-              della tipica clean girl. Attraverso l'impiego di Google Flow e Veo
-              3.1, sono stati generati cinque contenuti video: un'introduzione
-              neutrale con timer di avvio e quattro video tematici. Ogni clip
-              riflette rigorosamente le palette cromatiche, le azioni e gli
-              oggetti di scena distintivi delle categorie individuate (aspetto
-              fisico, status, motivazione e provenienza). La narrazione è
-              supportata da una selezione di clip estratte e destrutturate dai
-              30 video originali dell'analisi, strutturata per rispondere a
-              domande guida che accompagnano l'utente dalla definizione del
-              fenomeno fino alla visualizzazione dei dati.
+              Herriot
+              <a
+                href="https://www.tiktok.com/@daisyherriott?is_from_webapp=1&sender_device=pc"
+                target="_blank"
+                rel="noopener noreferrer"
+                >[@daisyherriot]</a
+              >
+              è stata scelta come figura centrale in quanto una delle influencer
+              con il maggior seguito e quella che più fedelmente incarna
+              l'estetica clean girl; il suo volto è stato quindi utilizzato come
+              base per sintetizzare l'immagine ideale della tipica clean girl.
+              Attraverso l'impiego di Google Flow e Veo 3.1, sono stati generati
+              cinque contenuti video: un'introduzione neutrale con timer di
+              avvio e quattro video tematici. Ogni clip riflette rigorosamente
+              le palette cromatiche, le azioni e gli oggetti di scena distintivi
+              delle categorie individuate (aspetto fisico, status, motivazione e
+              provenienza). La narrazione è supportata da una selezione di clip
+              estratte e destrutturate dai 30 video originali dell'analisi,
+              strutturata per rispondere a domande guida che accompagnano
+              l’utente dalla definizione del fenomeno fino alla visualizzazione
+              dei dati.
+            </p>
+            <p>
+              <a
+                href="https://youtu.be/xuFa7DdDJ_U"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Clicca qui per vedere tutto il video</a
+              >
             </p>
           </div>
         </div>
@@ -344,7 +442,10 @@
             />
             <div class="projects-list__text">
               <div class="category">Ozempic</div>
-              <div class="title">Come viene dimostrata la credibilità nei contenuti di Ozempic TikTok</div>
+              <div class="title">
+                Come viene dimostrata la credibilità nei contenuti di Ozempic
+                TikTok
+              </div>
             </div>
           </a>
           <a class="projects-list__item" href="/it/projects/gymbro">
