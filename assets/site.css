@@ -806,6 +806,15 @@ h5 {
   margin-bottom: 1.25rem;
 }
 
+.project-page p a,
+.project-page p a:hover,
+.project-page p a:visited,
+.project-page p a:focus {
+  color: #f69bd5;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
 .project-section__media {
   grid-column: 3 / 11;
 }
